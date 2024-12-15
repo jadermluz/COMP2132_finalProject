@@ -1,0 +1,458 @@
+@charset "UTF-8";
+@import url("fonts.css");
+section {
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: double 5px #660000;
+  padding: 15px;
+  margin: 25px auto;
+  background-color: var(--background-light);
+  text-align: center;
+  max-width: 100%;
+}
+
+button {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-color);
+  color: var(--background-light);
+  border: solid 2px var(--primary-color);
+  font-weight: bold;
+  padding: 8px 12px;
+  align-self: center;
+}
+button:hover {
+  border: solid 2px var(--accent-color);
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-color: rgb(58, 122, 190);
+  --primary-color-light: rgba(58, 122, 190, 0.2);
+  --accent-color: rgb(245, 115, 55);
+  --accent-color-light: rgba(245, 115, 55, 0.2);
+  --background-dark: #f9f9f9;
+  --background-light: rgb(255, 255, 255);
+  --table-line-color: rgb(200, 200, 200);
+  --highlight-color: rgb(58, 122, 190);
+  --danger-color: rgb(200, 40, 40);
+  --success-color: rgb(40, 140, 40);
+  --title-font: "Montserrat-Bold";
+  --body-font: "Roboto-Regular";
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font), "Arial", sans-serif;
+  color: rgb(30, 30, 30);
+  background-image: url("../images/christmas-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: auto;
+  height: 150px;
+  margin-right: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font), "Arial", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: var(--highlight-color);
+  text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+  text-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+a {
+  font-weight: bold;
+  color: var(--primary-color);
+  border-bottom: solid 2px var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  border-bottom: solid 2px var(--primary-color);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--accent-color);
+}
+
+section {
+  border: double 5px #660000;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 25px auto;
+  background-color: var(--background-light);
+  text-align: center;
+  max-width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 15px 0;
+  border: solid 1px var(--primary-color);
+  background-color: var(--background-light);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  padding: 8px 15px;
+  border: solid 1px var(--accent-color);
+  text-align: left;
+  font-weight: bold;
+  border-bottom: double 3px var(--accent-color);
+}
+
+tr {
+  background-color: var(--background-light);
+}
+
+tr:nth-child(even) {
+  background-color: var(--primary-color-light);
+}
+
+tr:hover {
+  background-color: rgba(58, 122, 190, 0.1);
+}
+
+td {
+  padding: 10px 15px;
+  border: solid 1px var(--table-line-color);
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+p, li {
+  line-height: 1.8rem;
+  font-size: 1rem;
+  color: rgb(30, 30, 30);
+}
+
+ul, ol {
+  margin: 20px 0;
+}
+
+blockquote {
+  background-color: var(--accent-color-light);
+  border-left: solid 5px var(--primary-color);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+pre {
+  border: solid 2px var(--accent-color);
+  border-radius: 8px;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  background-color: var(--table-line-color);
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 3px 6px;
+  border: dotted 1px var(--background-dark);
+}
+
+pre code {
+  padding: 0px;
+  border: 0px;
+}
+
+header {
+  background-color: #660000;
+  padding: 25px;
+  border-bottom: solid 3px var(--accent-color);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Mountains of Christmas", cursive;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+main {
+  padding: 30px;
+  flex: 1;
+  background-color: white;
+}
+
+footer {
+  padding: 20px;
+  background-color: var(--accent-color);
+  border-top: solid 2px var(--primary-color);
+  color: var(--background-light);
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+button {
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: var(--background-light);
+  border: solid 2px var(--primary-color);
+  font-weight: bold;
+  padding: 8px 12px;
+  align-self: center;
+}
+
+button:hover {
+  border: solid 2px var(--accent-color);
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.gridboxed {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.flexboxed {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridboxed section, .flexboxed section {
+  margin: 0;
+}
+
+.bad:before {
+  content: "👎";
+  margin-right: 8px;
+  text-shadow: none;
+}
+
+.good:before {
+  content: "👍";
+  margin-right: 8px;
+  text-shadow: none;
+}
+
+.warning {
+  padding: 18px;
+  background-color: rgba(255, 90, 90, 0.1);
+  border-radius: 8px;
+  border: solid 1px var(--danger-color);
+  box-shadow: 0px 0px 4px rgba(255, 90, 90, 0.1);
+}
+
+.important {
+  padding: 18px;
+  background-color: rgba(255, 255, 120, 0.1);
+  border-radius: 8px;
+  border: solid 1px black;
+  box-shadow: 0px 0px 4px rgba(255, 255, 0, 0.1);
+}
+
+.key {
+  border: 1px solid #000;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.key.disabled {
+  background-color: #ddd;
+  color: #aaa;
+  border: 1px solid #bbb;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.best-practice {
+  padding: 18px;
+  background-color: rgba(120, 255, 120, 0.1);
+  border-radius: 8px;
+  border: solid 1px var(--success-color);
+  box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.1);
+}
+
+#wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--background-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+#intro-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#intro-popup img {
+  max-width: 90%;
+  max-height: 90%;
+  min-width: 600px;
+  min-height: 500px;
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#intro-popup.hidden {
+  display: none;
+}
+
+#word {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.letter {
+  border: 2px solid #000;
+  margin: 0 5px;
+  width: 40px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#hint {
+  margin: 10px;
+  font-style: italic;
+}
+
+#keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+#game-board {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #f9f9f9;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+#grinch {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+  transition: left 0.5s ease;
+}
+
+#present {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+}
+
+#message {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#restart-button {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+#restart-button:hover {
+  background-color: #d32f2f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 600px) {
+  .gridboxed {
+    grid-template-columns: 1fr;
+  }
+  .flexboxed {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=styles.css.map */
